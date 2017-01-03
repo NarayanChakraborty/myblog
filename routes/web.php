@@ -11,7 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-	$home_content=view('pages.home');
-    return view('master')->with('content',$home_content);
-});
+Route::get('/','WelcomeController@index');
+Route::get('/profile','WelcomeController@profile');
