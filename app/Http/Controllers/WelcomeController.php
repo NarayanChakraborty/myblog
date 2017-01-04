@@ -22,7 +22,7 @@ class WelcomeController extends Controller
     {
         //
         
-       $profile_content=View('pages.profile');
+       $profile_content=view('pages.profile');
         return view('master')->with('content',$profile_content);
     }
 
