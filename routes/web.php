@@ -12,4 +12,11 @@
 */
 
 Route::get('/','WelcomeController@index');
-Route::get('/profile','WelcomeController@profile');
+Route::get('profile','WelcomeController@profile');
+
+Route::get('/about',function()
+{
+	return "Hello";
+}
+
+	);
